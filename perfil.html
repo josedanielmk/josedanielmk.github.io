@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Cuerpo De Cristo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Perfil de Usuario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="juego.html">Juego Bíblico</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="perfil">
+        <h2>Información del Usuario</h2>
+        <div class="perfil-container">
+            <img id="fotoPerfil" src="" alt="Foto de Perfil" style="display:none; width: 100px; height: 100px; border-radius: 50%;">
+            <div class="perfil-info">
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input type="file" id="foto" accept="image/*" required>
+                <button id="guardar">Guardar</button>
+                <div id="mensaje"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cuerpo De Cristo</p>
+    </footer>
+
+    <script src="js/perfil.js"></script>
+</body>
+</html>
+
