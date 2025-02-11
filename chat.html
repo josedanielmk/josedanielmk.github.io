@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en Vivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">⚾ Liga de Béisbol</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                <li class="nav-item"><a class="nav-link" href="resultados.html">Resultados</a></li>
+                <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="estadisticas.html">estadisticas</a></li>
+        </div>
+    </div>
+</nav>
+
+
+<body>
+    <h2>💬 Chat en Vivo</h2>
+    <div id="chat-box"></div>
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje..." />
+    <button onclick="enviarMensaje()">Enviar</button>
+
+    <script src="chat.js"></script>
+</body>
+</html>

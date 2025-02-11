@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Liga de Béisbol</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e74c3c !important;
+        }
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-title {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .table {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .table thead {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .ranking-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ranking-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Liga de Béisbol</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="resultados.html">Resultados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ranking.html">Ranking</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="donaciones.html">donaciones</a>
+            </li>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <h1>📊 Últimos Resultados de la Liga ⚾</h1>
+</div>
+
+<!-- Resultados Section -->
+<div class="container my-5">
+    <h2 class="section-title">Últimos Partidos</h2>
+    <table class="table table-striped text-center">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Equipo 1</th>
+                <th>Resultado</th>
+                <th>Equipo 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08/02/2025</td>
+                <td>Leones Rojos</td>
+                <td><strong>5 - 3</strong></td>
+                <td>Águilas Doradas</td>
+            </tr>
+            <tr>
+                <td>07/02/2025</td>
+                <td>Tigres Azules</td>
+                <td><strong>2 - 4</strong></td>
+                <td>Toros Negros</td>
+            </tr>
+            <tr>
+                <td>06/02/2025</td>
+                <td>Pumas Salvajes</td>
+                <td><strong>3 - 3</strong></td>
+                <td>Dragones Verdes</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Ranking Section -->
+<div class="container my-5">
+    <h2 class="section-title">Ranking de Equipos 🏆</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="ranking-card">
+                <img src="https://via.placeholder.com/50" alt="Leones Rojos">
+                <h5>Leones Rojos</h5>
+                <p>Puntos: 25</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ranking-card">
+                <img src="https://via.placeholder.com/50" alt="Águilas Doradas">
+                <h5>Águilas Doradas</h5>
+                <p>Puntos: 23</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ranking-card">
+                <img src="https://via.placeholder.com/50" alt="Toros Negros">
+                <h5>Toros Negros</h5>
+                <p>Puntos: 21</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Gráficos de Estadísticas -->
+<div class="container my-5">
+    <h2 class="section-title">Estadísticas de Equipos 📊</h2>
+    <canvas id="statsChart"></canvas>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 text-center">
+    <p>&copy; 2025 Liga de Béisbol. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Script para la gráfica -->
+<script>
+    var ctx = document.getElementById('statsChart').getContext('2d');
+    var statsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Leones Rojos', 'Águilas Doradas', 'Toros Negros', 'Tigres Azules', 'Pumas Salvajes', 'Dragones Verdes'],
+            datasets: [{
+                label: 'Puntos por equipo',
+                data: [25, 23, 21, 18, 16, 14],
+                backgroundColor: ['#e74c3c', '#f1c40f', '#34495e', '#2980b9', '#2ecc71', '#8e44ad']
+            }]
+        }
+    });
+</script>
+
+</body>
+</html>

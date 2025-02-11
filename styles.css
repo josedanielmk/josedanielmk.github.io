@@ -1,0 +1,228 @@
+.hero {
+    background: url('img/th.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #d32f2f, #9c27b0);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #ffeb3b !important;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #d32f2f;
+    border: none;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #b71c1c;
+}
+
+/* Tarjetas */
+.card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #9c27b0, #d32f2f);
+    color: white;
+}
+
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #d32f2f, #9c27b0);
+}
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #ffeb3b !important;
+}
+
+/* Encabezado con efecto Parallax */
+.header {
+    background: url('img/stadium.jpg') center/cover fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.header-content {
+    max-width: 700px;
+    margin: auto;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Botón con efecto */
+.btn-glow {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(211, 47, 47, 0.7);
+}
+.btn-glow:hover {
+    background-color: #b71c1c;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.9);
+}
+
+/* Sección de Tarjetas */
+.card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #9c27b0, #d32f2f);
+    color: white;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    color: white;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.table {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: #333;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff7e5f;
+}
+
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notificacion.mostrar {
+    opacity: 1;
+}
+
+
+
+
+#chat-box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    color: black;
+}
